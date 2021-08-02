@@ -3,6 +3,13 @@ export const defaultCssData = [
         font-size: 30px;
         color: red;
     }`,
+    `h4 {
+        text-align: center;
+    }`,
+    `img {
+        display: block;
+        margin: 2px auto;
+    }`,
     `#theId {
         font-size: 25px;
         color: green;
@@ -13,4 +20,5 @@ export const defaultCssData = [
         color: white;
         background-color: black;
     }`
+    
 ]
