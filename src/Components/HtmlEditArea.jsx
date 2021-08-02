@@ -4,7 +4,7 @@ import CodeSpan from './CodeSpan'
 
 export default function HtmlEditArea({ htmlContents }) {
     return (
-        <div className={`block mb-[15vh]`}>
+        <div className={`block overflow-scroll`}>
             <Droppable droppableId={`HTMLCodeArea`}>
                 {(provided, snapshot) => (
                     <div className="" ref={provided.innerRef} {...provided.droppableProps}>
@@ -17,6 +17,7 @@ export default function HtmlEditArea({ htmlContents }) {
                     </div>
                 )}
             </Droppable>
+            <div className="h-[15vh]"></div>
         </div>
     )
 }

@@ -3,10 +3,10 @@ import { Droppable } from 'react-beautiful-dnd'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-export default function EditBtns({ openAddCodeAreaEventHandler, downloadHtmlFileHandler }) {
+export default function EditBtns({ openAddCodeAreaEventHandler, downloadFileHandler }) {
     
     return (
-        <div className="flex justify-end items-center pl-[3vw] pr-[3vw] mb-4">
+        <div className="flex justify-end items-center pl-[3vw] pr-[3vw] mb-4 mt-2">
             <Droppable droppableId={`Trash`} isCombineEnabled={true}>
                 {(provided, snapshot) => ( 
                     <div
@@ -34,11 +34,11 @@ export default function EditBtns({ openAddCodeAreaEventHandler, downloadHtmlFile
             <div className="ml-7">
                 <button 
                 className={`border-0 rounded bg-gray-200 shadow p-2 hover:font-bold hover:bg-gray-300`}
-                onClick={ downloadHtmlFileHandler }
+                onClick={ downloadFileHandler }
                 >
                     <span className={`text-xs sm:text-sm md:text-lg`}>
                         <FontAwesomeIcon icon={['fas', 'file-download']} />&nbsp;
-                        下載 HTML 程式碼
+                        下載程式碼
                     </span>
                 </button>
             </div>

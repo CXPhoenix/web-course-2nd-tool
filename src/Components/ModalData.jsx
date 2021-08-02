@@ -40,7 +40,7 @@ export const info = {
         {
             infoLabel: 'CSS 內容',
             infoId: 'cssContent',
-            inputType: 'text'
+            inputType: 'textarea'
         }
     ]
 }
