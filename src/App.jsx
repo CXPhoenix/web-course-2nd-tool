@@ -108,9 +108,9 @@ function App() {
       const elementContent = document.querySelector(`#htmlElementContent`)
       const elementExtraSetting = document.querySelector(`#htmlElementExtraSetting`)
       if (singleHTMLElement.indexOf(elementName.value) === -1) {
-        codes = `<${elementName.value} ${elementId.value ? `id=${elementId.value}` : ``} ${elementClass.value ? `class=${elementClass.value}` : ``} ${elementStyle.value ? `style=${elementStyle.value}` : ``} ${elementExtraSetting.value}>${elementContent.value}</${elementName.value}>`
+        codes = `<${elementName.value} ${elementId.value ? `id="${elementId.value}"` : ``} ${elementClass.value ? `class="${elementClass.value}"` : ``} ${elementStyle.value ? `style="${elementStyle.value}"` : ``} ${elementExtraSetting.value}>${elementContent.value}</${elementName.value}>`
       } else {
-        codes = `<${elementName.value} ${elementId.value ? `id=${elementId.value}` : ``} ${elementClass.value ? `class=${elementClass.value}` : ``} ${elementStyle.value ? `style=${elementStyle.value}` : ``} ${elementExtraSetting.value} />`
+        codes = `<${elementName.value} ${elementId.value ? `id="${elementId.value}"` : ``} ${elementClass.value ? `class="${elementClass.value}"` : ``} ${elementStyle.value ? `style="${elementStyle.value}"` : ``} ${elementExtraSetting.value} />`
       }
       elementName.value = ''
       elementId.value = ''
