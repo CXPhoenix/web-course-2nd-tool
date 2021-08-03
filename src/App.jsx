@@ -99,8 +99,8 @@ function App() {
       'br',
       'hr'
     ]
+    let codes = ''
     if (modalType === 'html') {
-      let codes = ''
       const elementName = document.querySelector('#htmlElementName')
       const elementId = document.querySelector(`#htmlElementId`)
       const elementClass = document.querySelector(`#htmlElementClass`)
