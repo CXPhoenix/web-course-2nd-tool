@@ -34,7 +34,7 @@ export default function Editor({
     }
 
     return (
-        <div id={`Editor`} className="w-full h-full bg-[#114]">
+        <div id={`Editor`} className="w-full h-2/5 sm:h-full overflow-hidden bg-[#114]">
             <div className="flex pl-4 border-t-[1px] border-b-[1px] border-gray-300 h-[50px]">
                 {
                     editorList.map((item, index) => (
